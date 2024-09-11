@@ -1,5 +1,7 @@
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
+
+  
   //...
   build: {
     transpile: ['vuetify'],
@@ -21,7 +23,17 @@ export default defineNuxtConfig({
         transformAssetUrls,
       },
     },
+    // server: {
+    //   proxy: {
+    //     'https://notify-api.line.me/api/notify': {
+    //       target: 'https://notify-api.line.me/api/notify',
+    //       changeOrigin: true,
+    //     }
+    //   }
+    // }
   },
+
+
 
   compatibilityDate: '2024-07-10',
 })
